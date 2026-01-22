@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa IP - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- 1. SETTING LAYAR (BACKGROUND BROKEN WHITE) --- */
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #F5F5F0; /* Broken White */
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh; 
+        }
+
+        /* --- 2. BINGKAI HP (UKURAN 325px x 95vh) --- */
+        .mobile-wrapper { 
+            width: 325px;      /* Lebar ramping sesuai permintaan */
+            height: 98vh;     /* Tinggi hampir full layar laptop */
+            background-color: #2D126B; /* Ungu Index */
+            border-radius: 45px; 
+       
+            overflow: hidden; 
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* --- 3. STYLE KONTEN DALAM --- */
+        .logo-box { width: 100px; margin-bottom: 20px; }
+        
+        h1 { 
+            font-size: 2.8rem; /* Ukuran disesuaikan dengan layar sempit */
+            margin: 0; 
+            color: transparent; 
+            -webkit-text-stroke: 1.2px #BB86FC; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+        }
+
+        p.tagline { 
+            font-size: 0.85rem; 
+            font-weight: 300; 
+            margin: 15px 0; 
+            opacity: 0.9; 
+            color: white;
+            line-height: 1.5;
+        }
+
+        .price-tag { 
+            font-size: 1rem; 
+            font-weight: 600; 
+            margin: 25px 0; 
+            border-bottom: 2px solid #5a2eb8; 
+            display: inline-block; 
+            padding-bottom: 5px; 
+            color: white;
+        }
+
+        .btn-group { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 12px; 
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn { 
+            text-decoration: none; 
+            padding: 14px; 
+            border-radius: 12px; 
+            font-weight: 600; 
+            transition: 0.3s; 
+            font-size: 0.9rem; 
+            text-align: center;
+        }
+
+        .btn-daftar { 
+            background-color: #C19EFE; 
+            color: white; 
+        }
+
+        .btn-masuk { 
+            background-color: rgba(255,255,255,0.1); 
+            color: white; 
+            border: 1px solid white;
+        }
+
+        .btn:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-wrapper">
+        
+        <svg class="logo-box" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="url(#g)" stroke-width="2"/>
+            <path d="M23 19C23 19.5 22.8 20 22.4 20.4C22 20.8 21.5 21 21 21H3C2.5 21 2 20.8 1.6 20.4C1.2 20 1 19.5 1 19V8C1 7.5 1.2 7 1.6 6.6C2 6.2 2.5 6 3 6H7L9 3H15L17 6H21C21.5 6 22 6.2 22.4 6.6C22.8 7 23 7.5 23 8V19Z" stroke="url(#g)" stroke-width="2"/>
+            <defs><linearGradient id="g" x1="1" y1="3" x2="23" y2="21" gradientUnits="userSpaceOnUse"><stop stop-color="#f093fb"/><stop offset="1" stop-color="#f5576c"/></linearGradient></defs>
+        </svg>
+
+        <h1>Sewa IP</h1>
+        <p class="tagline">Sewa iPhone buat konten & tugas, hemat & mudah!</p>
+        
+        <div class="price-tag">Mulai dari Rp 80.000 saja!</div>
+
+        <div class="btn-group">
+            <a href="sewaip-daftar.html" class="btn btn-daftar">Daftar</a>
+            <a href="sewaip-masuk.html" class="btn btn-masuk">Masuk</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa IP - Masuk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- 1. SETTING LAYAR (BACKGROUND BROKEN WHITE) --- */
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #F5F5F0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh; 
+        }
+
+        /* --- 2. BINGKAI HP (UKURAN 325px x 95vh) --- */
+        .mobile-wrapper { 
+            width: 325px;
+            height: 98vh;
+            background-color: white; 
+            border-radius: 45px; 
+        
+            overflow: hidden; 
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- 3. STYLE KONTEN MASUK --- */
+        .header-bg { 
+            background: #7F3DFF; 
+            height: 140px; 
+            width: 150%; 
+            position: absolute; 
+            top: -40px; 
+            left: -25%; 
+            border-bottom-left-radius: 50%; 
+            border-bottom-right-radius: 50%; 
+            z-index: 0; 
+        }
+
+        .content { 
+            position: relative; 
+            z-index: 1; 
+            padding: 100px 25px 30px; 
+            text-align: center;
+        }
+
+        h2 { font-weight: 700; font-size: 26px; margin-bottom: 5px; color: #333; }
+        h2 span { color: #BB86FC; }
+        p.sub { font-size: 13px; color: #888; margin-bottom: 30px; }
+
+        .input-group { margin-bottom: 15px; position: relative; }
+        input { 
+            width: 100%; 
+            padding: 14px; 
+            border-radius: 12px; 
+            border: 1.5px solid #eee; 
+            box-sizing: border-box; 
+            background: #F3E8FF; 
+            font-family: 'Poppins'; 
+            outline: none; 
+            font-size: 14px;
+        }
+
+        .btn-main { 
+            width: 100%; 
+            padding: 15px; 
+            border: none; 
+            border-radius: 12px; 
+            background: #C19EFE; 
+            color: white; 
+            font-weight: 600; 
+            font-size: 15px; 
+            cursor: pointer; 
+            box-shadow: 0 5px 15px rgba(193, 158, 254, 0.4); 
+            margin-top: 10px;
+        }
+
+        .footer-text { font-size: 12px; margin-top: 25px; color: #666; }
+        .footer-text a { color: #BB86FC; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-wrapper">
+        <div class="header-bg"></div>
+        
+        <div class="content">
+            <h2>Masuk <span>Di sini</span></h2>
+            <p class="sub">Silakan masuk kembali</p>
+            
+            <div class="input-group">
+                <input type="text" id="loginNama" placeholder="Nama">
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="loginPass" placeholder="Password">
+            </div>
+
+            <button class="btn-main" onclick="validasiMasuk()">Masuk</button>
+
+            <p class="footer-text">Belum punya akun? <a href="sewaip-daftar.html">Buat akun</a></p>
+        </div>
+    </div>
+
+    <script>
+    function validasiMasuk() {
+        const namaInput = document.getElementById('loginNama').value;
+        const passInput = document.getElementById('loginPass').value;
+
+        const savedNama = localStorage.getItem('registeredNama');
+        const savedPass = localStorage.getItem('registeredPass');
+
+        if (namaInput === "" || passInput === "") {
+            alert("Nama dan Password tidak boleh kosong!");
+        } 
+        else if (namaInput === savedNama && passInput === savedPass) {
+            alert("Selamat Datang, " + savedNama + "!");
+            window.location.href = 'sewaip-beranda.html';
+        } 
+        else {
+            alert("Nama atau Password salah! (Atau kamu belum daftar)");
+        }
+    }
+    </script>
+</body>
+</html>
